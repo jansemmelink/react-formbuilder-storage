@@ -7,3 +7,10 @@ type Todo @model {
   name: String!
   description: String
 }
+
+type Group @model {
+  id: ID!
+  name: String!
+  description: String
+  owners: [String!]!
+}

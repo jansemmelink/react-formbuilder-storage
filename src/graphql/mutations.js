@@ -46,3 +46,51 @@ export const deleteTodo = /* GraphQL */ `
     }
   }
 `;
+export const createGroup = /* GraphQL */ `
+  mutation CreateGroup(
+    $input: CreateGroupInput!
+    $condition: ModelGroupConditionInput
+  ) {
+    createGroup(input: $input, condition: $condition) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const updateGroup = /* GraphQL */ `
+  mutation UpdateGroup(
+    $input: UpdateGroupInput!
+    $condition: ModelGroupConditionInput
+  ) {
+    updateGroup(input: $input, condition: $condition) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const deleteGroup = /* GraphQL */ `
+  mutation DeleteGroup(
+    $input: DeleteGroupInput!
+    $condition: ModelGroupConditionInput
+  ) {
+    deleteGroup(input: $input, condition: $condition) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;

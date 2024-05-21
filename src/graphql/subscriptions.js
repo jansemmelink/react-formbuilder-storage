@@ -37,3 +37,42 @@ export const onDeleteTodo = /* GraphQL */ `
     }
   }
 `;
+export const onCreateGroup = /* GraphQL */ `
+  subscription OnCreateGroup($filter: ModelSubscriptionGroupFilterInput) {
+    onCreateGroup(filter: $filter) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateGroup = /* GraphQL */ `
+  subscription OnUpdateGroup($filter: ModelSubscriptionGroupFilterInput) {
+    onUpdateGroup(filter: $filter) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteGroup = /* GraphQL */ `
+  subscription OnDeleteGroup($filter: ModelSubscriptionGroupFilterInput) {
+    onDeleteGroup(filter: $filter) {
+      id
+      name
+      description
+      owners
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
