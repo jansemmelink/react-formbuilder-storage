@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "reactformbuilderstor",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
